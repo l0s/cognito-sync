@@ -3,10 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0730863D1BF4329200B8D02A /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0730863C1BF4329200B8D02A /* AWSCognito.framework */; };
+		0730863E1BF4329200B8D02A /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0730863C1BF4329200B8D02A /* AWSCognito.framework */; };
+		073086401BF473CD00B8D02A /* CognitoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730863F1BF473CD00B8D02A /* CognitoCell.swift */; };
+		073086411BF473CD00B8D02A /* CognitoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730863F1BF473CD00B8D02A /* CognitoCell.swift */; };
+		073086431BF475E900B8D02A /* CognitoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073086421BF475E900B8D02A /* CognitoService.swift */; };
+		073086441BF475E900B8D02A /* CognitoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073086421BF475E900B8D02A /* CognitoService.swift */; };
+		073086461BF47A8E00B8D02A /* CognitoProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073086451BF47A8E00B8D02A /* CognitoProfile.swift */; };
+		073086471BF47A8E00B8D02A /* CognitoProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073086451BF47A8E00B8D02A /* CognitoProfile.swift */; };
+		073086491BF53F6A00B8D02A /* private.plist in Resources */ = {isa = PBXBuildFile; fileRef = 073086481BF53F6A00B8D02A /* private.plist */; };
 		07A94CC91BF429150052F7F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A94CC81BF429150052F7F0 /* AppDelegate.swift */; };
 		07A94CCB1BF429150052F7F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A94CCA1BF429150052F7F0 /* ViewController.swift */; };
 		07A94CCE1BF429150052F7F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A94CCC1BF429150052F7F0 /* Main.storyboard */; };
@@ -14,6 +23,25 @@
 		07A94CD31BF429150052F7F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A94CD11BF429150052F7F0 /* LaunchScreen.storyboard */; };
 		07A94CDE1BF429150052F7F0 /* CognitoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A94CDD1BF429150052F7F0 /* CognitoTests.swift */; };
 		07A94CE91BF429150052F7F0 /* CognitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A94CE81BF429150052F7F0 /* CognitoUITests.swift */; };
+		07A94D4B1BF42E610052F7F0 /* AWSAPIGateway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D3B1BF42E610052F7F0 /* AWSAPIGateway.framework */; };
+		07A94D4C1BF42E610052F7F0 /* AWSAutoScaling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D3C1BF42E610052F7F0 /* AWSAutoScaling.framework */; };
+		07A94D4D1BF42E610052F7F0 /* AWSCloudWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D3D1BF42E610052F7F0 /* AWSCloudWatch.framework */; };
+		07A94D4E1BF42E610052F7F0 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D3E1BF42E610052F7F0 /* AWSCore.framework */; };
+		07A94D4F1BF42E610052F7F0 /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D3F1BF42E610052F7F0 /* AWSDynamoDB.framework */; };
+		07A94D501BF42E610052F7F0 /* AWSEC2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D401BF42E610052F7F0 /* AWSEC2.framework */; };
+		07A94D511BF42E610052F7F0 /* AWSElasticLoadBalancing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D411BF42E610052F7F0 /* AWSElasticLoadBalancing.framework */; };
+		07A94D521BF42E610052F7F0 /* AWSKinesis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D421BF42E610052F7F0 /* AWSKinesis.framework */; };
+		07A94D531BF42E610052F7F0 /* AWSLambda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D431BF42E610052F7F0 /* AWSLambda.framework */; };
+		07A94D541BF42E610052F7F0 /* AWSMachineLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D441BF42E610052F7F0 /* AWSMachineLearning.framework */; };
+		07A94D551BF42E610052F7F0 /* AWSMobileAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D451BF42E610052F7F0 /* AWSMobileAnalytics.framework */; };
+		07A94D561BF42E610052F7F0 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D461BF42E610052F7F0 /* AWSS3.framework */; };
+		07A94D571BF42E610052F7F0 /* AWSSES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D471BF42E610052F7F0 /* AWSSES.framework */; };
+		07A94D581BF42E610052F7F0 /* AWSSimpleDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D481BF42E610052F7F0 /* AWSSimpleDB.framework */; };
+		07A94D591BF42E610052F7F0 /* AWSSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D491BF42E610052F7F0 /* AWSSNS.framework */; };
+		07A94D5A1BF42E610052F7F0 /* AWSSQS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D4A1BF42E610052F7F0 /* AWSSQS.framework */; };
+		07A94D5C1BF42F290052F7F0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D5B1BF42F290052F7F0 /* SystemConfiguration.framework */; };
+		07A94D5E1BF42F390052F7F0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D5D1BF42F390052F7F0 /* libz.tbd */; };
+		07A94D601BF42F420052F7F0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A94D5F1BF42F420052F7F0 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +62,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0730863C1BF4329200B8D02A /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = "<group>"; };
+		0730863F1BF473CD00B8D02A /* CognitoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoCell.swift; sourceTree = "<group>"; };
+		073086421BF475E900B8D02A /* CognitoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoService.swift; sourceTree = "<group>"; };
+		073086451BF47A8E00B8D02A /* CognitoProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CognitoProfile.swift; sourceTree = "<group>"; };
+		073086481BF53F6A00B8D02A /* private.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = private.plist; sourceTree = "<group>"; };
 		07A94CC51BF429150052F7F0 /* Cognito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cognito.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A94CC81BF429150052F7F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07A94CCA1BF429150052F7F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +80,26 @@
 		07A94CE41BF429150052F7F0 /* CognitoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CognitoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A94CE81BF429150052F7F0 /* CognitoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitoUITests.swift; sourceTree = "<group>"; };
 		07A94CEA1BF429150052F7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A94D3B1BF42E610052F7F0 /* AWSAPIGateway.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSAPIGateway.framework; sourceTree = "<group>"; };
+		07A94D3C1BF42E610052F7F0 /* AWSAutoScaling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSAutoScaling.framework; sourceTree = "<group>"; };
+		07A94D3D1BF42E610052F7F0 /* AWSCloudWatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCloudWatch.framework; sourceTree = "<group>"; };
+		07A94D3E1BF42E610052F7F0 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
+		07A94D3F1BF42E610052F7F0 /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSDynamoDB.framework; sourceTree = "<group>"; };
+		07A94D401BF42E610052F7F0 /* AWSEC2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSEC2.framework; sourceTree = "<group>"; };
+		07A94D411BF42E610052F7F0 /* AWSElasticLoadBalancing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSElasticLoadBalancing.framework; sourceTree = "<group>"; };
+		07A94D421BF42E610052F7F0 /* AWSKinesis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSKinesis.framework; sourceTree = "<group>"; };
+		07A94D431BF42E610052F7F0 /* AWSLambda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSLambda.framework; sourceTree = "<group>"; };
+		07A94D441BF42E610052F7F0 /* AWSMachineLearning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSMachineLearning.framework; sourceTree = "<group>"; };
+		07A94D451BF42E610052F7F0 /* AWSMobileAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSMobileAnalytics.framework; sourceTree = "<group>"; };
+		07A94D461BF42E610052F7F0 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
+		07A94D471BF42E610052F7F0 /* AWSSES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSES.framework; sourceTree = "<group>"; };
+		07A94D481BF42E610052F7F0 /* AWSSimpleDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSimpleDB.framework; sourceTree = "<group>"; };
+		07A94D491BF42E610052F7F0 /* AWSSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSNS.framework; sourceTree = "<group>"; };
+		07A94D4A1BF42E610052F7F0 /* AWSSQS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSQS.framework; sourceTree = "<group>"; };
+		07A94D5B1BF42F290052F7F0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		07A94D5D1BF42F390052F7F0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		07A94D5F1BF42F420052F7F0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		07A94D611BF42FD80052F7F0 /* Cognito-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cognito-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +107,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A94D601BF42F420052F7F0 /* libsqlite3.tbd in Frameworks */,
+				07A94D5E1BF42F390052F7F0 /* libz.tbd in Frameworks */,
+				07A94D5C1BF42F290052F7F0 /* SystemConfiguration.framework in Frameworks */,
+				07A94D4D1BF42E610052F7F0 /* AWSCloudWatch.framework in Frameworks */,
+				07A94D591BF42E610052F7F0 /* AWSSNS.framework in Frameworks */,
+				07A94D521BF42E610052F7F0 /* AWSKinesis.framework in Frameworks */,
+				07A94D4E1BF42E610052F7F0 /* AWSCore.framework in Frameworks */,
+				07A94D551BF42E610052F7F0 /* AWSMobileAnalytics.framework in Frameworks */,
+				07A94D531BF42E610052F7F0 /* AWSLambda.framework in Frameworks */,
+				07A94D4B1BF42E610052F7F0 /* AWSAPIGateway.framework in Frameworks */,
+				07A94D4C1BF42E610052F7F0 /* AWSAutoScaling.framework in Frameworks */,
+				07A94D4F1BF42E610052F7F0 /* AWSDynamoDB.framework in Frameworks */,
+				07A94D581BF42E610052F7F0 /* AWSSimpleDB.framework in Frameworks */,
+				07A94D561BF42E610052F7F0 /* AWSS3.framework in Frameworks */,
+				0730863D1BF4329200B8D02A /* AWSCognito.framework in Frameworks */,
+				07A94D511BF42E610052F7F0 /* AWSElasticLoadBalancing.framework in Frameworks */,
+				07A94D541BF42E610052F7F0 /* AWSMachineLearning.framework in Frameworks */,
+				07A94D501BF42E610052F7F0 /* AWSEC2.framework in Frameworks */,
+				07A94D5A1BF42E610052F7F0 /* AWSSQS.framework in Frameworks */,
+				07A94D571BF42E610052F7F0 /* AWSSES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0730863E1BF4329200B8D02A /* AWSCognito.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +151,7 @@
 		07A94CBC1BF429150052F7F0 = {
 			isa = PBXGroup;
 			children = (
+				07A94D3A1BF42E1F0052F7F0 /* Frameworks */,
 				07A94CC71BF429150052F7F0 /* Cognito */,
 				07A94CDC1BF429150052F7F0 /* CognitoTests */,
 				07A94CE71BF429150052F7F0 /* CognitoUITests */,
@@ -103,6 +178,11 @@
 				07A94CCF1BF429150052F7F0 /* Assets.xcassets */,
 				07A94CD11BF429150052F7F0 /* LaunchScreen.storyboard */,
 				07A94CD41BF429150052F7F0 /* Info.plist */,
+				07A94D611BF42FD80052F7F0 /* Cognito-Bridging-Header.h */,
+				0730863F1BF473CD00B8D02A /* CognitoCell.swift */,
+				073086421BF475E900B8D02A /* CognitoService.swift */,
+				073086451BF47A8E00B8D02A /* CognitoProfile.swift */,
+				073086481BF53F6A00B8D02A /* private.plist */,
 			);
 			path = Cognito;
 			sourceTree = "<group>";
@@ -124,6 +204,34 @@
 			);
 			path = CognitoUITests;
 			sourceTree = "<group>";
+		};
+		07A94D3A1BF42E1F0052F7F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0730863C1BF4329200B8D02A /* AWSCognito.framework */,
+				07A94D5F1BF42F420052F7F0 /* libsqlite3.tbd */,
+				07A94D5D1BF42F390052F7F0 /* libz.tbd */,
+				07A94D5B1BF42F290052F7F0 /* SystemConfiguration.framework */,
+				07A94D3B1BF42E610052F7F0 /* AWSAPIGateway.framework */,
+				07A94D3C1BF42E610052F7F0 /* AWSAutoScaling.framework */,
+				07A94D3D1BF42E610052F7F0 /* AWSCloudWatch.framework */,
+				07A94D3E1BF42E610052F7F0 /* AWSCore.framework */,
+				07A94D3F1BF42E610052F7F0 /* AWSDynamoDB.framework */,
+				07A94D401BF42E610052F7F0 /* AWSEC2.framework */,
+				07A94D411BF42E610052F7F0 /* AWSElasticLoadBalancing.framework */,
+				07A94D421BF42E610052F7F0 /* AWSKinesis.framework */,
+				07A94D431BF42E610052F7F0 /* AWSLambda.framework */,
+				07A94D441BF42E610052F7F0 /* AWSMachineLearning.framework */,
+				07A94D451BF42E610052F7F0 /* AWSMobileAnalytics.framework */,
+				07A94D461BF42E610052F7F0 /* AWSS3.framework */,
+				07A94D471BF42E610052F7F0 /* AWSSES.framework */,
+				07A94D481BF42E610052F7F0 /* AWSSimpleDB.framework */,
+				07A94D491BF42E610052F7F0 /* AWSSNS.framework */,
+				07A94D4A1BF42E610052F7F0 /* AWSSQS.framework */,
+			);
+			name = Frameworks;
+			path = /Users/carlos/var/workspace/xcode/scratch/Cognito/Frameworks;
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -205,7 +313,7 @@
 				};
 			};
 			buildConfigurationList = 07A94CC01BF429150052F7F0 /* Build configuration list for PBXProject "Cognito" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -231,6 +339,7 @@
 			files = (
 				07A94CD31BF429150052F7F0 /* LaunchScreen.storyboard in Resources */,
 				07A94CD01BF429150052F7F0 /* Assets.xcassets in Resources */,
+				073086491BF53F6A00B8D02A /* private.plist in Resources */,
 				07A94CCE1BF429150052F7F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +365,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073086401BF473CD00B8D02A /* CognitoCell.swift in Sources */,
+				073086461BF47A8E00B8D02A /* CognitoProfile.swift in Sources */,
 				07A94CCB1BF429150052F7F0 /* ViewController.swift in Sources */,
 				07A94CC91BF429150052F7F0 /* AppDelegate.swift in Sources */,
+				073086431BF475E900B8D02A /* CognitoService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +378,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A94CDE1BF429150052F7F0 /* CognitoTests.swift in Sources */,
+				073086411BF473CD00B8D02A /* CognitoCell.swift in Sources */,
+				073086441BF475E900B8D02A /* CognitoService.swift in Sources */,
+				073086471BF47A8E00B8D02A /* CognitoProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +463,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -387,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -399,10 +514,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Cognito/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.macasaet.Cognito;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cognito/Cognito-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -410,10 +533,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Cognito/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.macasaet.Cognito;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cognito/Cognito-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -421,6 +552,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = CognitoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.macasaet.CognitoTests;
@@ -433,6 +568,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = CognitoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.macasaet.CognitoTests;
@@ -484,6 +623,7 @@
 				07A94CEF1BF429150052F7F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07A94CF01BF429150052F7F0 /* Build configuration list for PBXNativeTarget "CognitoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +632,7 @@
 				07A94CF21BF429150052F7F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07A94CF31BF429150052F7F0 /* Build configuration list for PBXNativeTarget "CognitoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +641,7 @@
 				07A94CF51BF429150052F7F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

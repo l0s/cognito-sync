@@ -8,18 +8,65 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    override func viewDidLoad() {
+    lazy var service = CognitoService.instance
+
+    // MARK: model
+    var rows:[(String, String)] = [ ( "Cognito ID", "" ),
+                                    ( "Count", "" ),
+                                    ( "Computed Value", "" ) ]
+
+    // MARK: view
+    @IBOutlet weak var tableView: UITableView!
+
+    // MARK: controller
+    @IBAction func increment( sender: UIBarButtonItem )
+    {
+        service.increment( updateProfile )
+    }
+
+    @IBAction func refresh( sender: UIBarButtonItem )
+    {
+        service.refresh( updateProfile )
+    }
+
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        service.refresh( updateProfile )
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func updateProfile( profile:CognitoProfile )
+    {
+        let computedString:String
+        if let computedInt = profile.computedValue
+        {
+            computedString = "\(computedInt)"
+        }
+        else
+        {
+            computedString = ""
+        }
+        rows[ 0 ] = ( "Cognito ID", profile.cognitoId )
+        rows[ 1 ] = ( "Count", "\(profile.counter)" )
+        rows[ 2 ] = ( "Computed Value", computedString )
+        dispatch_async( dispatch_get_main_queue(), tableView.reloadData )
     }
 
+    // MARK: UITableViewDataSource
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return rows.count
+    }
+
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        let index = indexPath.row
+        let cell = tableView.dequeueReusableCellWithIdentifier( "prototypeCell" ) as! CognitoCell
+        cell.tuple = rows[ index ]
+        return cell
+    }
 
 }
-
